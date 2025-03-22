@@ -1,7 +1,7 @@
 # Django-projects
 This is Django project end to end.
 
-This is the Home page of my project..(Wdbsite of a computer institution) as this is a professional website.
+This is the Home page of my project..(Website of a computer institution) as this is a professional website.
 ![image](https://github.com/user-attachments/assets/381b1b69-ec65-49fa-ac96-7bb5a2e6b2ad)
 
      This is the rest part of Home page..
