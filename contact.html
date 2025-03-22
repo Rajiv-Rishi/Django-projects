@@ -1,0 +1,35 @@
+{%extends 'base.html'%}
+{%block title%}Contact{%endblock title%}
+{%block body%}
+{% load static %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'images/9.jfif' %}"class="d-block w-10" alt="My image" width="900" height="500">
+             <h1>Contact Us</h1>
+            <form method="POST" action="/contact/" name= "contact">
+            {% csrf_token %}
+                <div class="form-group
+                ">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email"name="email" placeholder="Enter your Email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your Phone Number">
+
+                <div class="form-group">
+                    <label for="desc">What you want to contatc us about</label>
+                    <textarea class="form-control" id="desc" name="desc" rows="3" name="desc" ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+{%endblock body%}
+
